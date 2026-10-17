@@ -1,0 +1,22 @@
+# Dependencies (Never commit these, they are huge)
+node_modules/
+
+# Environment variables (Passwords, API keys)
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build output (if you ever add a build step)
+dist/
+build/
+
+# Editor folders
+.vscode/
+.idea/
