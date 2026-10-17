@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
-require("dotenv").config(); // <-- ADD THIS LINE
+require("dotenv").config();
 
 const app = express();
 
@@ -30,7 +30,7 @@ app.post("/api/apply", upload.single("cvFile"), async (req, res) => {
 
     const payload = {
       from: "The Right Talent Careers <onboarding@resend.dev>",
-      to: ["teamrightalent@gmail.com"], 
+      to: ["teamrightalent@gmail.com"], // <-- Now works with the new key!
       subject: `New Application: ${role} - ${fullName}`,
       text: `
         New Job Application
